@@ -16,7 +16,8 @@
  --header-logo-color: #000000;
  --sections-background-color: #2F303A;
  --boarder-color: #ECECEC;
- --our-team-background: #F5F4FA;     
+ --our-team-background: #F5F4FA; 
+ --card-background: #EEEEEE;
 }
 
 
@@ -62,6 +63,7 @@ body {
     font-family: inherit;
 }
 
+
 /* header */
 
 header {
@@ -95,6 +97,9 @@ header {
     line-height: 1.14;
 }
 
+.current {
+    color: var(--accent-color);
+}
 
 .contacts-header {
     margin-left:330px;
@@ -125,7 +130,8 @@ header {
     margin-top: 0;  
     margin-bottom: 30px;
     padding-top: 200px;
-    line-height: 1.36;  
+    line-height: 1.36;
+    text-transform: uppercase;  
     
     text-align: center;    
 
@@ -179,10 +185,6 @@ header {
     color: var(--main-dark);
 }
 
-.about-us-list {
-
-}
-
 .our-team-section {
     background-color: var(--our-team-background);
 }
@@ -195,7 +197,7 @@ header {
 
 .our-team-item {
     margin-left: 30px;
-    background: #FFFFFF;
+    background: var(--main-light);
         
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -255,7 +257,8 @@ address {
     font-size: 16px;
     line-height: 26px;
 
-    background: #2196F3;
+    background: var(--accent-color);
+    color: var(--main-light);
     cursor: pointer;
         
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -265,8 +268,8 @@ address {
 }
 
 .card {
-    background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    background: var(--main-light);
+    border: 1px solid var(--card-background);
 
     margin-left: 30px;
 
@@ -281,6 +284,10 @@ address {
     color: var(--main-dark);
 }
 
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* .about-us-list {
     display: grid;
